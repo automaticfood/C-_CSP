@@ -16,4 +16,5 @@ int main(){
 	
 	cout<<R;
 	
+	return 0;
 }
