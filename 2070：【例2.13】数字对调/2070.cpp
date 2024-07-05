@@ -3,7 +3,7 @@
 using namespace std;
 
 int main(){
-	int a,result;
+	int a, result;
 	int b, s, g;
 	scanf("%d", &a);
 	

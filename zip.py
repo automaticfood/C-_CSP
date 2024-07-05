@@ -16,7 +16,7 @@ if __name__ == '__main__':
     # exclude_patterns: 要排除的文件和文件夹模式列表
     source_folder = './'
     destination_zip = './workspace.zip'
-    exclude_patterns = ['*.tmp', '.gitignore', '.git/*', 'zip.py', 'complier.py', '问题题目.xlsx', 'workspace.zip']
+    exclude_patterns = ['*.tmp', '.gitignore', '.git/*', 'zip.py', 'complier.py', '问题题目.xlsx', 'workspace.zip', '.vscode']
 
     with zipfile.ZipFile(destination_zip, 'w', zipfile.ZIP_DEFLATED) as zipf:
         zipdir(source_folder, zipf, exclude_patterns)

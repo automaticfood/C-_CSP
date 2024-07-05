@@ -5,7 +5,7 @@ using namespace std;
 
 int main(){
 	int r, h;
-	double v,total;
+	double v, total;
 	scanf("%d%d", &h, &r);
 	
 	v = PI * r * r * h;

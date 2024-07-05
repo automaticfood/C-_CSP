@@ -1,4 +1,3 @@
-#include <iostream>
 #include <cstdio>
 
 using namespace std;
@@ -9,7 +8,7 @@ int main(){
 
 	int R = (cows1 * days1 - cows2 * days2) / 10;
 
-	cout<<R;
+	printf("%d", R);
 
 	return 0;
 }
