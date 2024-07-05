@@ -3,8 +3,13 @@
 using namespace std;
 
 int main(){
-	int a;
+	int a,c;
+	bool b;
 	scanf("%d", &a);
 	
-	printf()
+	b = a;
+	c = b;
+	printf("%d", c);
+	
+	return 0;
 }
