@@ -3,10 +3,33 @@
 using namespace std;
 
 int main(){
-	int x;
+	int a, b, c, x, remain;
 	scanf("%d", &x);
 	
-//  a,b,c
-//  6a+5b+4c<=x
-//	a+b+c max
+	c = x / 4;
+	remain = x % 4;
+	switch (remain){
+		case 0:
+			a = 0;
+			b = 0;
+			break;
+		case 1:
+			a = 0;
+			b = 1;
+			c = c - 1;
+			break;
+		case 2:
+			a = 1;
+			b = 0;
+			c = c - 1;
+			break;
+		case 3:
+			a = 1;
+			b = 1;
+			c = c - 2;
+			break;
+	}
+	printf("%d %d %d", a, b, c);
+	
+	return 0;
 }
