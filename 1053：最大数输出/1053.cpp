@@ -3,13 +3,17 @@
 using namespace std;
 
 int main(){
-	int x, y, z, mx;
-	scanf("%d%d%d", &x, &y, &y);
+	int a, b, c, mx;
+	scanf("%d%d%d", &a, &b, &c);
 	
-	mx = x;
-	if (y > mx) mx = y;
-	if (z > mx) mx = z;
+	if (a > b){
+		mx = a;
+	} else {
+		mx = b;
+	}
+	if (mx < c){
+		mx = c;
+	}
+	
 	printf("%d", mx);
-	
-	return 0;
 }
