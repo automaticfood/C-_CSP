@@ -7,22 +7,22 @@ int main(){
 	bool flag;
 	scanf("%d", &n);
 	
-	for(int i = 0; i < n; i++){
+	for(int i = 0; i <= n; i++){
 		tmp = i;
-		flag = true;
-		if(tmp % 7 == 0) {
-			continue;
-		}
+		flag = false;
+		if(tmp % 7 == 0) continue;
 		while(tmp > 0){
-			tmp /= 10;
 			if(tmp % 10 == 7){
-				flag = false;
+				flag = true;
 				break;
 			}
+			tmp /= 10;
 		}
-		if(flag){
+		if(!flag){
 			sum += i * i;
 		}
 	}
 	printf("%d", sum);
+	
+	return 0;
 }
